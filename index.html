@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Afronika - Download App</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background: #f7f7f7;
+    margin: 0;
+    padding: 0;
+  }
+  .container {
+    padding: 50px 20px;
+  }
+  h1 {
+    color: #1a1a1a;
+    margin-bottom: 20px;
+    font-size: 28px;
+  }
+  p {
+    font-size: 18px;
+    color: #555;
+    margin-bottom: 30px;
+  }
+  .buttons a {
+    display: inline-block;
+    margin: 10px;
+    padding: 15px 25px;
+    font-size: 16px;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 10px;
+    transition: transform 0.2s;
+  }
+  .buttons a:hover {
+    transform: scale(1.05);
+  }
+  .google-play { background: #3bccff; }
+  .apple-store { background: #000; }
+  .features {
+    margin-top: 40px;
+  }
+  .feature {
+    margin-bottom: 20px;
+    font-size: 16px;
+  }
+</style>
+</head>
+<body>
+
+<div class="container">
+  <h1>Get Afronika Today!</h1>
+  <p>Stream your favorite music anytime, anywhere. Download Afronika app now.</p>
+
+  <div class="buttons">
+    <a href="https://play.google.com/store/apps/details?id=com.afronika.app" class="google-play" target="_blank">
+      Download on Google Play
+    </a>
+    <a href="https://apps.apple.com/app/idYOUR_APP_ID" class="apple-store" target="_blank">
+      Download on App Store
+    </a>
+  </div>
+
+  <div class="features">
+    <div class="feature">🎵 Unlimited Music Streaming</div>
+    <div class="feature">🌍 Discover New Artists</div>
+    <div class="feature">🔥 Create Your Own Playlists</div>
+  </div>
+</div>
+
+<!-- Device detection script -->
+<script>
+  const isIOS = /iPhone|iPad|iPod/i.test(navigator.userAgent);
+  const isAndroid = /Android/i.test(navigator.userAgent);
+
+  // Hide the irrelevant button
+  if (isIOS) document.querySelector(".google-play").style.display = "none";
+  if (isAndroid) document.querySelector(".apple-store").style.display = "none";
+</script>
+
+</body>
+</html>
